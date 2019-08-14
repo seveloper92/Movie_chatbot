@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--데이터 바인딩을 사용하기 위해 layout으로 전체를 감싸줌-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!--해당 클래스와 연결-->
+        <variable
+            name="IntroActivity"
+            type="com.example.movie_chatbot.Intro_01" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:background="#310040">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_above="@+id/imageView12"
+            android:layout_marginBottom="-10dp"
+            android:fromAlpha="0.0"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="134dp"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="14dp"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="186dp"
+            android:layout_marginTop="33dp"
+            android:src="@drawable/star"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="186dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginStart="21dp"
+            android:layout_marginLeft="21dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_toStartOf="@+id/imageView10"
+            android:layout_toLeftOf="@+id/imageView10"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignEnd="@+id/imageView2"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageView8"
+            android:layout_toLeftOf="@+id/imageView8"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_marginTop="-42dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/star" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="-23dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:src="@drawable/star" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/logo2" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/appname" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="By 박윤원."
+                android:textSize="15dp"
+                android:gravity="center"
+                android:paddingLeft="200dp"
+                android:layout_marginTop="300dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
